@@ -30,7 +30,14 @@ const InputProducteur = () => {
         <>
             <Row gutter={16} justify="space-between">
                 <Col className="gutter-row" span={18}>
-                    <Form.Item name="producteur">
+                    <Form.Item name="producteur"
+                        // rules={[
+                        //     {
+                        //         required: true,
+                        //         message: 'Choisissez un producteur',
+                        //     },
+                        // ]}
+                        >
                         <Select
                             name="producteur"
                             placeholder="Producteur"
@@ -68,7 +75,7 @@ const InputProducteur = () => {
             {isGroup &&
                 <Form.Item name='eleveur'>
                     <Input
-                    type='text'
+                        type='text'
                         placeholder='Eleveur'
                     />
                 </Form.Item>

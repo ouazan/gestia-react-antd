@@ -5,9 +5,9 @@ import { Layout } from 'antd';
 
 import Sider from './components/Sider';
 // import IaList from './components/IaList';
-import AddIa from './components/addIa/AddIa';
+// import AddIa from './components/addIa/Test';
 import HeaderApp from './components/Header';
-import FormEx from './components/addIa/Form';
+import AddIa from './components/addIa/AddIa';
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
         {/* <div className='form-container'> */}
           {/* <AddIa /> */}
         {/* </div> */}
-        <FormEx/>
+        <AddIa/>
       </Content>
       <Footer>Footer</Footer>
     </Layout>
