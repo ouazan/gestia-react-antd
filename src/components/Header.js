@@ -1,5 +1,5 @@
 import { MenuOutlined } from '@ant-design/icons';
-import { Layout,Button } from 'antd';
+import { Layout, Button } from 'antd';
 
 export default function HeaderApp({ setVisible }) {
     const { Header } = Layout
@@ -10,7 +10,7 @@ export default function HeaderApp({ setVisible }) {
             <Button type="link">
                 <MenuOutlined
                     onClick={() => setVisible(true)}
-                    style={{ fontSize: 24 }}
+                    style={{ fontSize: 24, color: 'white' }}
                 />
             </Button>
 

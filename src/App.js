@@ -1,13 +1,8 @@
-import {useState} from 'react'
-import './App.css'
-import 'antd/dist/antd.css'
+import { useState } from 'react'
+import './App.less'
 import { Layout } from 'antd';
-
 import Sider from './components/Sider';
-// import IaList from './components/IaList';
-// import AddIa from './components/addIa/Test';
 import HeaderApp from './components/Header';
-import AddIa from './components/addIa/AddIa';
 
 
 function App() {
@@ -17,15 +12,10 @@ function App() {
     <Layout
       style={{ minHeight: '100vh' }}
     >
-      <HeaderApp setVisible={setVisible}/>
+      <HeaderApp setVisible={setVisible} />
 
-      <Sider visible={visible} setVisible={setVisible}/>
       <Content>
-        {/* <IaList/> */}
-        {/* <div className='form-container'> */}
-          {/* <AddIa /> */}
-        {/* </div> */}
-        <AddIa/>
+        <Sider visible={visible} setVisible={setVisible} />
       </Content>
       <Footer>Footer</Footer>
     </Layout>

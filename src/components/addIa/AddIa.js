@@ -31,14 +31,12 @@ const AddIa = () => {
                         name="addIa"
                         onFinish={onFinish}
                         onFinishFailed={onFinishFailed}
-                    >
-                       
+                    >                      
                         <InputDate form={form}/>
                         <InputProducteur />
                         <InputBull />
                         <InputFemelle />
                         <InputPayement />
-
                         <Form.Item >
                             <Button
                                 type="primary"
